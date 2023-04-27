@@ -4,4 +4,9 @@ FROM confluentinc/cp-kafka-connect:7.2.5
 #COPY mongo-kafka-connect-<<INSERT BUILD HERE>>3-all.jar /usr/share/confluent-hub-components
 RUN confluent-hub install --no-prompt --verbose mongodb/kafka-connect-mongodb:latest
 
+COPY custom/ /usr/share/confluent-hub-components/mongodb-kafka-connect-mongodb/lib/
+
+RUN ls /usr/share/confluent-hub-components
+RUN ls /usr/share/confluent-hub-components/mongodb-kafka-connect-mongodb/lib/
+
 ENV CONNECT_PLUGIN_PATH="/usr/share/java,/usr/share/confluent-hub-components"

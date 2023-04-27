@@ -6,6 +6,8 @@ The official MongoDB Connector for Apache® Kafka® is developed and supported b
 
 These tutorials are focused on teaching you the essential features and functionality of the connector enabling you to get up and running quickly.
 
+NOTE: Repository cloned from [mongodb-university/kafka-edu](https://github.com/mongodb-university/kafka-edu/tree/main/docs-examples/mongodb-kafka-base) for dual testing of Source and Sink connectors. 
+
 # Prerequisites
 
 The MongoDB Kafka tutorial environment requires the following installed on your client:

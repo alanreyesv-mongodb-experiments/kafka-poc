@@ -94,7 +94,7 @@ services:
     environment:
       SCHEMA_REGISTRY_HOST_NAME: schema-registry
       SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: "broker:29092"
-      SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: "zookeeper:2181"
+      # SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: "zookeeper:2181"
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
 
   mongo1:
@@ -166,7 +166,6 @@ services:
         "sleep 10 && mongosh --host mongo2:27017 config-replica.js && sleep 10",
       ]
     restart: "no"
-
 networks:
   localnet:
     attachable: true

@@ -35,6 +35,8 @@ services:
       context: .
       dockerfile: connect.Dockerfile
     ports:
+      - "8083:8083"
+      - "8084:8083"
       - "35000:35000"
     hostname: connect
     container_name: connect
